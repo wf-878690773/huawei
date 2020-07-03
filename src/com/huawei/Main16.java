@@ -26,16 +26,10 @@ public class Main16 {
      * @throws Exception
      */
     public static void main(String[] args) throws Exception{
-      /*  BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-        String line=null;
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        String line;
         while((line=br.readLine())!=null){
             System.out.println(fun(line));
-        }*/
-
-        Scanner scanner = new Scanner(System.in);
-        while (scanner.hasNext()){
-            String s = scanner.nextLine();
-            System.out.println(fun(s));
         }
     }
     private static String fun(String s){

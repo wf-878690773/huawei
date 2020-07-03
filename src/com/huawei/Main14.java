@@ -28,10 +28,10 @@ import java.util.*;
  * */
 public class Main14 {
     public static void main(String[] args) throws IOException {
-        Scanner scanner = new Scanner(System.in);
-        while (scanner.hasNext()){
-            String s = scanner.nextLine();
-            System.out.println(MarkNum(s));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String str;
+        while((str = br.readLine())!= null){
+            System.out.println(MarkNum(str));
         }
     }
     public static String MarkNum(String pInst){
