@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 import java.util.*;
 
 /**
+ *  HJ02字符统计
  * 输入描述:
  * 输入一串字符。
  *
@@ -35,6 +36,9 @@ public class Main16 {
     private static String fun(String s){
         char[] chars = s.toCharArray();
         int[] num = new int[200];
+        /**
+         * num[97]=?, num[98]=?, num[99]=?
+         */
         for(char c : chars){
             int i = c;
             num[i]++;

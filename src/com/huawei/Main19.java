@@ -33,9 +33,10 @@ public class Main19 {
     public static void boolAllCharExist(String shortString,String longString){
         int i;
         for (i = 0; i < shortString.length(); i++) {
+
             if (longString.indexOf(shortString.charAt(i)) == -1) {
                 System.out.println(false);
-                i--;
+                //i--;
                 break;
             }
         }

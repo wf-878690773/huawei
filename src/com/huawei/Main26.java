@@ -4,7 +4,20 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 /**
- * 排序
+ * HJ101: 输入整型数组和排序标识，对其元素按照升序或降序进行排序
+ * 输入描述:
+ * 1、输入需要输入的整型数个数
+ *
+ * 输出描述:
+ * 输出排好序的数字
+ *
+ * 示例1
+ * 输入
+ * 8
+ * 1 2 4 9 3 55 64 25
+ * 0
+ * 输出
+ * 1 2 3 4 9 25 55 64
  */
 public class Main26 {
     public static void main(String[] args) throws Exception{
@@ -13,6 +26,7 @@ public class Main26 {
         while((str=br.readLine())!= null){
             int n = Integer.parseInt(str);
             String[] sort = br.readLine().split(" ");
+            // 字符数组 -> int数组
             int[] num = new int[n];
             for (int i = 0; i < n; i++) {
                 num[i] = Integer.parseInt(sort[i]);
